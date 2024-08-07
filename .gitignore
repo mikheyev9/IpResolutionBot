@@ -1,0 +1,104 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environments
+*.env
+
+# Python egg metadata
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+# Usually contains the Python interpreter:
+dist/
+build/
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Virtual environments
+.virtualenv/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Static files
+staticfiles/
+
+# Django stuff:
+*.log
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# MyPy
+.mypy_cache/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# PyCharm
+*.iml
+*.iws
+.idea/
+out/
+
+# App logs
+*.log
+
+# Ignore generated json files for examples
+data/example_data/*.json
+
+# Ignore compiled files
+*.pyc
+*.pyo
