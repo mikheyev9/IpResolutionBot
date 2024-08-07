@@ -13,6 +13,7 @@ from tg import TelegramBot
 
 load_dotenv()
 # Установить рабочую директорию в директорию, где находится скрипт
+LAST_DATA_CHECK = 1723056400
 DEBUG = False
 VT_API_KEY = os.getenv('VT_API_KEY')
 TELEGRAM_TOKEN = os.getenv('TELEGRAM_BOT_API_TOKEN')
@@ -24,7 +25,7 @@ async def main():
     await DB.init()
 
     ip_addresses: list = await read_ip_addresses()
-    ip_addresses = await DB.get_latest_dates(ip_addresses, if_not_data=1723056400)
+    ip_addresses = await DB.get_latest_dates(ip_addresses, if_not_data=LAST_DATA_CHECK)
     logger.info(f'Checking this {ip_addresses}')
 
     ip_resolutions = await request.fetch_domains_by_ip_addresses(ip_addresses)
